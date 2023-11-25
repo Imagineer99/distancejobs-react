@@ -270,4 +270,108 @@ h1.w3-jumbo {
   background: linear-gradient(to right, #050505, #333) !important; /* Dark background color with subtle gradient */
   box-shadow: 0 8px 6px -6px #0000, 0 -8px 6px -6px #000c!important;
 }
-  
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif !important;
+  color: #fdfdfd;
+}
+
+/* Navbar styles */
+.w3-top {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Diagonal gradient for subtle contrast */
+}
+
+.w3-bar, h1, button {
+  font-family: "Lato", sans-serif !important;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Diagonal gradient for subtle contrast */
+  color: #fdfdfd !important;
+}
+
+/* First Grid styles */
+.w3-row-padding {
+  background: linear-gradient(45deg, #181818, #333) !important; /* Diagonal gradient for subtle contrast */
+  color: #fdfdfd !important;
+}
+
+/* Second Grid styles */
+.w3-light-grey {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Diagonal gradient for subtle contrast */
+  color: #e61414 !important;
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Diagonal gradient for subtle contrast */
+  color: #fdfdfd !important;
+}
+
+/* Quote of the day styles */
+.w3-container.w3-black {
+  background-color: #000 !important; /* Black background color */
+}
+
+/* Social icons styles */
+.w3-xlarge {
+  color: #fdfdfd !important; /* Light text color for social icons */
+}
+
+/* Original image size styles */
+.w3-third img, .w3-twothird img {
+  width: 100% !important; /* Make images responsive */
+  height: auto !important;
+}
+
+/* Main title text styles with background image */
+h1.title-image {
+  display: inline !important;
+  position: relative !important;
+  font-size: 32px !important; /* Adjust the font size as needed */
+  color: transparent !important; /* Hide the text */
+  background-image: url('https://th.bing.com/th/id/OIG.9s_bvLBfLpka.entk91n?pid=ImgGn') !important; /* Replace with the path to your image */
+  background-size: cover !important; /* Cover the entire element with the background image */
+  -webkit-background-clip: text !important; /* Clip the background image to the text */
+  background-clip: text !important;
+  text-shadow: none !important; /* Remove text shadow */
+}
+
+/* Main title text with image fill */
+h1.w3-jumbo {
+  font-size: 72px !important; /* Adjust the font size as needed */
+  color: transparent !important; /* Hide the text */
+  background: rgb(255, 255, 255) !important;
+  background-size: cover !important; /* Cover the entire element with the background image */
+  -webkit-background-clip: text !important; /* Clip the background image to the text */
+  background-clip: text !important;
+  text-shadow: none !important; /* Remove text shadow */
+  display: inline-block !important;
+}
+
+/* Custom Button */
+.w3-button-custom {
+  background: linear-gradient(45deg, #e61414, #333) !important; /* Diagonal gradient for subtle contrast */
+  color: #fdfdfd !important; /* Button text color */
+  padding: 15px 30px !important; /* Button padding */
+  font-size: 18px !important; /* Button font size */
+  border: none !important; /* Remove button border */
+  cursor: pointer !important;
+  border-radius: 8px !important; /* Add border-radius for a rounded look */
+}
+
+/* Custom Section with Drop Shadow */
+.w3-custom-section {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Diagonal gradient for subtle contrast */
+  box-shadow: 0 8px 6px -6px #0000, 0 -8px 6px -6px #000c!important;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  h1.w3-jumbo {
+    font-size: 34px!important;
+  }
+  .w3-xlarge {
+    font-size: 18px!important;
+}
+}
