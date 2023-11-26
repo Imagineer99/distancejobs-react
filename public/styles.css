@@ -140,7 +140,7 @@ h1.w3-jumbo {
   -webkit-background-clip: text; /* Clip the background image to the text */
   background-clip: text;
   text-shadow: none; /* Remove text shadow */
-  display: inline-block;
+  display: block;
   backdrop-filter: blur 400px !important;
   
 }
@@ -250,7 +250,7 @@ h1.w3-jumbo {
   -webkit-background-clip: text !important; /* Clip the background image to the text */
   background-clip: text !important;
   text-shadow: none !important; /* Remove text shadow */
-  display: inline-block !important;
+  display: block !important;
  
 }
 
@@ -381,15 +381,6 @@ h1.w3-jumbo {
 .w3-black {
   border-radius: 4px;
 }
-/* Mobile styles */
-@media screen and (max-width: 600px) {
-  h1.w3-jumbo {
-    font-size: 34px!important;
-  }
-  .w3-xlarge {
-    font-size: 18px!important;
-}
-}/* Quote of the day styles */
 .w3-container.w3-black {
   background-color: #000 !important; /* Black background color */
   color: #fdfdfd !important; /* Light text color */
@@ -447,7 +438,7 @@ footer {
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  display: inline-block!important;
+  display: block!important;
   margin: 10px 10px 10px 0;
 }
 
@@ -456,3 +447,99 @@ footer {
   flex-direction: column!important;
   align-items: center!important;
 }
+.my-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.my-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.w3-modal-content,
+.w3-card-4 {
+  background: linear-gradient(45deg, #ebebeb, #333) !important;
+  color: #fdfdfd !important;
+  padding: 15px 20px !important;
+  font-size: 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 8px !important;
+ 
+  margin: 10px 0 !important; /* Adjust margin for spacing between elements */
+}
+
+.w3-button-register {
+  width: 100% !important;
+  background: linear-gradient(45deg, #ebebeb, #333) !important; /* Apply the same gradient as the other elements */
+}
+
+.w3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w3-container label {
+  margin-bottom: 8px;
+}
+
+.w3-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* Common styles for modal content, card, and register button */
+.w3-modal-content,
+.w3-card-4,
+.w3-button-register {
+  background: linear-gradient(45deg, #ebebeb, #333) !important;
+  color: #fdfdfd !important;
+  padding: 15px 20px !important;
+  font-size: 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 8px !important;
+  margin: 10px 10px 10px 0 !important;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  h1.w3-jumbo {
+    font-size: 34px!important;
+  }
+  .w3-xlarge {
+    font-size: 18px!important;
+}
+
+}
+
+
+/* Modal content styles */
+.w3-modal-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 400px !important; /* Adjust the maximum width as needed */
+  margin: auto !important;
+  padding: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  background: linear-gradient(45deg, #ebebeb, #333) !important;
+  color: #fdfdfd !important;
+  border-radius: 8px !important;
+}
+    /* Define styles for the anchor element */
+    a {
+      color: #2f869c!important; /* Change to your desired text color */
+
+    }
