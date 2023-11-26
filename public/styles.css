@@ -389,4 +389,37 @@ h1.w3-jumbo {
   .w3-xlarge {
     font-size: 18px!important;
 }
+}/* Quote of the day styles */
+.w3-container.w3-black {
+  background-color: #000 !important; /* Black background color */
+  color: #fdfdfd !important; /* Light text color */
 }
+
+/* Footer styles */
+footer {
+  background: linear-gradient(45deg, #050505, #333) !important; /* Dark background color with subtle gradient */
+  color: #fdfdfd !important; /* Light text color */
+}
+
+/* Adjusted color for text */
+.w3-container.w3-black h1.w3-xlarge,
+footer p {
+  color: #fdfdfd !important;
+}
+
+/* Social icons styles */
+.w3-xlarge {
+  color: #fdfdfd !important; /* Light text color for social icons */
+}
+
+/* Additional styling for the footer */
+footer {
+  margin: 0 !important; /* Remove default margin for better alignment */
+  padding: 10px 0 !important; /* Add padding for better spacing */
+}
+.w3-opacity, .w3-hover-opacity:hover {
+  opacity: 0.91!Important;
+  border-radius: 0px!important;
+}
+
+.w3-xlarge, .w3-padding-32{}
