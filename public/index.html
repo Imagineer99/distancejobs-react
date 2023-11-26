@@ -20,21 +20,21 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-card w3-left-align w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Register</a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-white">About</a>
+    <a href="#register" class="w3-bar-item w3-button w3-padding-large w3-white">Register</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-center" style="padding:128px 16px">
+<header id="home" class="w3-container w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">distancejobs.co.uk ◈</h1>
   <p class="w3-xlarge">Connecting Talent to Remote Opportunities</p>
   <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
 </header>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64">
+<!-- About Grid -->
+<div id="about" class="w3-row-padding w3-padding-64">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>The Power of Remote Work</h1>
@@ -59,12 +59,23 @@
     <div class="w3-twothird">
       <h1>Land Your Dream Remote Job From a Distance</h1>
       <h5 class="w3-padding-32">Take the first step towards your dream career. Gain access to personalized 1-to-1 coaching and let our experts guide you to success in the remote job market.</h5>
-
+      
       <p class="w3-text-grey">Sign up now and join our waitlist for expert guidance. Our coaching sessions are tailored to your needs, helping you secure and thrive in your ideal remote job. Transform your career and embrace the future of work with confidence.</p>
     </div>
   </div>
 </div>
 
+<!-- Register -->
+<div id="register" class="w3-row-padding w3-light-grey w3-padding-64">
+  <div class="w3-content">
+    <div class="w3-twothird2">
+      <h1>Register Now!</h1>
+      <h5 class="w3-padding-32">All we require is your email address and your desired career path.</h5>
+      <button id="registerBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="openRegisterModal()">Register</button>
+      <p class="w3-text-grey">We do not share your personal details with any third-parties, our interest rests on bringing you the best opportunities and resources available to enhance your remote career.</p>
+    </div>
+  </div>
+</div>
 
 <!-- Quote of the day -->
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
@@ -73,11 +84,32 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  
-    <!-- Social icons go here -->
-  </div>
-  <p>© 2023 distancejobs.co.uk All Rights Reserved.</a></p>
+  <!-- Social icons go here -->
+  <p>© 2023 distancejobs.co.uk All Rights Reserved.</p>
 </footer>
+
+<!-- Registration Modal -->
+<div id="registerModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-black">
+      <span onclick="closeRegisterModal()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Registration Form</h2>
+    </header>
+    <div class="w3-container">
+      <!-- Add your registration form fields here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="industry">Job Industry Preference:</label>
+      <input type="text" id="industry" name="industry" required>
+
+      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="submitRegistration()">Submit</button>
+    </div>
+  </div>
+</div>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -90,6 +122,22 @@ function myFunction() {
   }
 }
 
+// Function to open the registration modal
+function openRegisterModal() {
+  document.getElementById('registerModal').style.display = 'block';
+}
+
+// Function to close the registration modal
+function closeRegisterModal() {
+  document.getElementById('registerModal').style.display = 'none';
+}
+
+// Function to handle form submission (you can modify this as needed)
+function submitRegistration() {
+  // Add your logic here to handle form submission
+  // For now, let's just close the modal
+  closeRegisterModal();
+}
 </script>
 
 </body>

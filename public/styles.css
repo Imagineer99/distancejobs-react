@@ -422,4 +422,37 @@ footer {
   border-radius: 0px!important;
 }
 
-.w3-xlarge, .w3-padding-32{}
+ .w3-twothird2 {
+  text-align: center!important;
+  margin-left: 5px!important;
+}
+
+/* Add your custom styles here */
+
+/* Style for the Register button */
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w3-modal-content,
+.w3-card-4,
+.w3-button-register {
+  /* Your existing styles remain unchanged */
+  background: linear-gradient(45deg, #ebebeb, #333);
+  color: #fdfdfd;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-block!important;
+  margin: 10px 10px 10px 0;
+}
+
+.my-form {
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center!important;
+}
