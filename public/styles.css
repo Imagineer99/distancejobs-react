@@ -534,7 +534,7 @@ footer {
   margin: auto !important;
   padding: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-  background: linear-gradient(45deg, #ebebeb, #333) !important;
+  background: linear-gradient(45deg, #409773, #333333d1) !important;
   color: #fdfdfd !important;
   border-radius: 8px !important;
 }
@@ -543,3 +543,47 @@ footer {
       color: #2f869c!important; /* Change to your desired text color */
 
     }
+/* Privacy-related HTML elements styles */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif !important;
+  color: #f2f2f2; /* Light text color */
+}
+
+/* Header styles */
+header {
+  background-color: #333; /* Dark background color */
+  color: #f2f2f2; /* Light text color */
+}
+
+/* Sections styles */
+section {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #f2f2f2; /* Light text color */
+  padding: 20px; /* Add padding for better spacing */
+  margin: 20px 0; /* Add margin for better spacing between sections */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #f2f2f2; /* Light text color */
+  padding: 10px 0; /* Add padding for better spacing */
+}
+
+/* Quote of the day styles */
+.w3-container.w3-black {
+  background-color: #000; /* Black background color */
+}
+
+/* Social icons styles */
+.w3-xlarge {
+  color: #f2f2f2; /* Light text color for social icons */
+}
+
+/* Original image size styles */
+.w3-third img,
+.w3-twothird img {
+  width: 100%; /* Make images responsive */
+  height: auto;
+}
